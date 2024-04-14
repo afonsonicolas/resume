@@ -91,6 +91,11 @@ strong{
     font-size:1.4vw;
 }
 
+.linktext{
+    color:darkblue;
+    text-decoration: underline;
+}
+
 #typed{
     font-size:2.5vw;
 }
