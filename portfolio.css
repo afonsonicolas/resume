@@ -50,6 +50,16 @@ h1, h2, h3, h4, h5 span{
     font-weight:normal;
 }
 
+.linktext a{
+    color:darkblue;
+    text-decoration:underline;
+}
+
+.linktext a:visited{
+    color:darkblue;
+    text-decoration:underline;
+}
+
 .home-button{
     line-height: 55%;
 }
@@ -1389,6 +1399,15 @@ h3.reference.hover-line{
     a:visited, a:hover, a:active {
         color: black;
       }
+    .linktext a{
+    color:darkblue;
+    text-decoration:underline;
+    }
+
+    .linktext a:visited{
+    color:darkblue;
+    text-decoration:underline;
+    }
 
     .phone_menu{
         width:100%;
