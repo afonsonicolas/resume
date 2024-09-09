@@ -1,15 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Check if device is non-touchscreen
   if (!('ontouchstart' in window)) {
-    // Get the top_bar element
     let topBar = document.querySelector('.top_bar');
 
-    // Add event listener for mouseenter
     topBar.addEventListener('mouseenter', function() {
       toggleItems(true);
     });
-
-    // Add event listener for mouseleave
+    
     topBar.addEventListener('mouseleave', function() {
       toggleItems(false);
     });
@@ -37,7 +33,6 @@ function toggleMenu() {
 hamburger.addEventListener("click", toggleMenu);
 
 function toggleItems(hovered) {
-  // Existing code for toggling menu items and lines
   let menuLines = document.querySelectorAll('.menu_line');
   let item1 = document.querySelector('.item-1');
   let item2 = document.querySelector('.item-2');
@@ -54,7 +49,6 @@ function toggleItems(hovered) {
     line.style.width = hovered ? '0' : '100%';
   });
 
-  // New code to toggle .lift elements
   document.querySelectorAll('.plane-wrapper').forEach(function(planeline) {
     planeline.style.display = hovered ? 'none' : '';
   });
@@ -64,3 +58,4 @@ function toggleItems(hovered) {
     lift.style.display = hovered ? 'none' : '';
   });
 }
+
