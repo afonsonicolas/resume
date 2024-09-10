@@ -59,3 +59,26 @@ function toggleItems(hovered) {
   });
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    const clickMeBoxes = document.querySelectorAll('.click-me-box');
+
+    clickMeBoxes.forEach(box => {
+        box.addEventListener('click', function(e) {
+            clickMeBoxes.forEach(otherBox => {
+                otherBox.classList.remove('hover');
+            });
+            this.classList.add('hover');
+        });
+    });
+
+    document.addEventListener('click', function(event) {
+        const isTappable = event.target.closest('.clickable, .button, a');
+
+        if (isTappable) {
+            clickMeBoxes.forEach(box => {
+                box.classList.remove('hover');
+            });
+        }
+    });
+});
+
