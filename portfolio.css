@@ -1435,6 +1435,12 @@ h3.reference.hover-line{
         transform: scale(1.03);
         filter: grayscale(0);
     }
+    .modal-in-modal {
+	height: 100%;
+    }
+    .content-description {
+	height: 100%;
+    }
     .parallax{
         background-size:contain;
     }
