@@ -1435,6 +1435,9 @@ h3.reference.hover-line{
         transform: scale(1.03);
         filter: grayscale(0);
     }
+    .link_button {
+	font-size: 3.2vw;
+    }
     .modal-in-modal {
 	height: 100%;
     }
