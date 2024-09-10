@@ -1036,6 +1036,10 @@ footer{
     object-position: 00% 86%;
 }
 
+.modal-open{
+    overflow: hidden;
+}
+
 .modal100 {
     width:95%;
     height:95%;
