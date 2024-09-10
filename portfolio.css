@@ -1429,6 +1429,12 @@ h3.reference.hover-line{
   }
 
 @media screen and (max-width:1100px){
+    .click-me-box.hover {
+        box-shadow: 1px 1px 1px 1px #C8C8C8;
+        transition: transform 0.3s ease-in-out;
+        transform: scale(1.03);
+        filter: grayscale(0);
+    }
     .parallax{
         background-size:contain;
     }
