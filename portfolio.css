@@ -8,6 +8,15 @@ body {
     font-weight:normal;
 }
 
+.youtube {
+    height: 100%;
+    width: 100%;
+}
+
+.frame {
+    height: 260px;
+}
+
 .top_bar{
     position:fixed;
     width:99%;
@@ -1439,16 +1448,21 @@ h3.reference.hover-line{
 	font-size: 3.2vw;
     }
     .modal-in-modal {
-	height: 100%;
+	    height: 100%;
+        padding:0;
+    }
+    .modal100 {
+        height:40%;
+        min-height: 500px;
     }
     .content-description {
-	height: 100%;
+	    height: 100%;
+    }
+    .description-modal {
+        height: 82%;
     }
     .parallax{
         background-size:contain;
-    }
-    .modal100{
-        height:90%;
     }
     .subtext{
         font-size:0.9vw;
